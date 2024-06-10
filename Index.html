@@ -1,0 +1,201 @@
+<html>
+
+<head>
+    <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col xs-12">
+                <b>Test Image - </b> :
+                <img src="Stopwatch.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Google Lens </b> :
+                <span class="span">Kadio LCD CHRONOGRAPH Digital Timerr Stop watch Sport Counter Pedometer Watch</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Microsoft Azure</b> :
+                <span class="span">A hand holding a watch</span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12">
+                <h4>Result -Google Lens is better </h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+
+
+            <div class="test_image_and_result col-xs-12">
+
+                <li class="col-sm-4 col xs-12">`
+                    <b>Test Image - </b>
+                    <img src="sHOES.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Google Lens </b>:
+                    <span class="span">Campus Running sports Shoes</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Microsoft Azure </b>:
+                    <span class="span">a close up of a footwear</span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - Google Lens is better</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+                <div class="test_image_and_result col-xs-12">
+
+                    <li class="col-sm-4 col xs-12">
+                        <b>Test Image - </b>
+                        <img src="Laptop.jpg" class="img-responsive">
+                    </li>
+
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on <b>Google Lens </b> :
+                        <span class="span">Lenovo ideapad</span>
+                    </h5>
+
+                    <h5 class="col-sm-4 col-xs-12">
+                        Output on <b>Microsoft Azure</b>
+                        <span class="span">An open laptop compuer sitting on top of a table</span>
+                    </h5>
+
+                    <div class="mini_result" class="col-xs-12">
+                        <h4>Result -Google Lens is better </h4>
+                        <hr>
+                        <h4></h4>
+                    </div>
+
+
+
+
+                    <div class="test_image_and_result col-xs-12">
+
+                        <li class="col-sm-4 col xs-12">
+                            <b>Test Image - </b>
+                            <img src="classmate-spiral-binding-note-book.jpg" class="img-responsive">
+                        </li>
+
+                        <h5 class="col-sm-4 col-xs-12">
+                            Output on <b>Google Lens </b> :
+                            <span class="span">Classmate premium 6 subject notebook </span>
+                        </h5>
+
+                        <h5 class="col-sm-4 col-xs-12">
+                            Output on <b>Microsoft Azure </b>:
+                            <span class="span">graphical user interface surface chart</span>
+                        </h5>
+
+                        <div class="mini_result" class="col-xs-12">
+                            <h4>Result - Googgle Lens is better</h4>
+                            <hr>
+                            <h4></h4>
+                        </div>
+
+
+                        <div class="test_image_and_result col-xs-12">
+
+                            <li class="col-sm-4 col xs-12">
+                                <b>Test Image - </b>
+                                <img src="Claock.jpeg" class="img-responsive">
+                            </li>
+
+                            <h5 class="col-sm-4 col-xs-12">
+                                Output on <b>Google Lens </b> :
+                                <span class="span">TFA Angular Funk-Walker COMBO 60.1511.01.07</span>
+                            </h5>
+
+                            <h5 class="col-sm-4 col-xs-12">
+                                Output on <b>Microsoft Azure </b>
+                                <span class="span">A clock hanging on the Wall</span>
+                            </h5>
+
+                            <div class="mini_result" class="col-xs-12">
+                                <h4>Result - Google Lens better</h4>
+                                <hr>
+                                <h4></h4>
+                            </div>
+
+
+                            <div class="test_image_and_result col-xs-12">
+
+                                <li class="col-sm-4 col xs-12">
+                                    <b>Test Image - </b>
+                                    <img src="Bird.jpeg" class="img-responsive">
+                                </li>
+
+                                <h5 class="col-sm-4 col-xs-12">
+                                    Output on <b>Google Lens </b> :
+                                    <span class="span">Bald Eagle</span>
+                                </h5>
+
+                                <h5 class="col-sm-4 col-xs-12">
+                                    Output on <b>Microfoft Azure </b> :
+                                    <span class="span">A bird flying over a water body</span>
+                                </h5>
+
+                                <div class="mini_result" class="col-xs-12">
+                                    <h4>Result - Google Lens is better</h4>
+                                    <hr>
+                                    <h4></h4>
+                                </div>
+
+                                <div class="test_image_and_result col-xs-12">
+
+                                    <li class="col-sm-4 col xs-12">
+                                        <b>Test Image - </b>
+                                        <img src="Airconditiioner.jpeg" class="img-responsive">
+                                    </li>
+
+                                    <h5 class="col-sm-4 col-xs-12">
+                                        Output on <b>Google Lens </b>:
+                                        <span class="span">Wall mounted Air conditioner</span>
+                                    </h5>
+
+                                    <h5 class="col-sm-4 col-xs-12">
+                                        Output on <b>Microsoft Azure</b> :
+                                        <span class="span">text</span>
+                                    </h5>
+
+                                    <div class="mini_result" class="col-xs-12">
+                                        <h4>Result - Google Lens is better </h4>
+                                        <hr>
+                                        <h4></h4>
+                                    </div>
+
+
+    </ol>
+
+</center>
+
+
+    <div class="copy_right_footer">
+        DEVELOPED BY PARV SHARMA
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
